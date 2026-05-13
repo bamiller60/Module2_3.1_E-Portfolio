@@ -15,13 +15,353 @@
   <body>
     <section id="about-me">
       <nav>
-        <div class="personal__logo">Brad Miller</div>
+        <div class="personal__logo--container">
+          <img
+            src="/assets/my-personal-logo.png"
+            class="personal__logo"
+            alt="Personal Logo"
+          />
+        </div>
         <ul class="nav__links">
-          <li><a class="nav__link link__hover-effect link__hover-effect--black" href="#languages">Languages</a></li>
-          <li><a class="nav__link link__hover-effect link__hover-effect--black" href="#projects">Projects</a></li>
-          <li><a class="nav__link nav__link--contact" href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="nav__link link__hover-effect link__hover-effect--black"
+              href="#languages"
+              >Languages</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link link__hover-effect link__hover-effect--black"
+              href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="nav__link nav__link--contact" href="#contact">Contact</a>
+          </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="overlay">
+          <button class="btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#languages" class="menu__link" onclick="closeMenu()"
+                >Languages</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#projects" class="menu__link" onclick="closeMenu()"
+                >Projects</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#contact" class="menu__link" onclick="closeMenu()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div class="flex flex-1">
+        <div class="about-me__info row">
+          <div class="about-me__info--container">
+            <figure class="about-me__picture--container">
+              <img
+                src="/assets/Profile Picture.jpg"
+                class="about-me__picture"
+                alt="Profile Picture"
+              />
+            </figure>
+            <h1 class="about-me__info--title">
+              Hello! I'm <span class="highlighter">Brad Miller</span>
+            </h1>
+            <p class="about-me__info--para">
+              Lorem ipsum
+              <strong class="highlighter">sit amet consectetur</strong>
+              adipisicing elit. Quisquam nisi illum placeat aliquam? Et porro
+              illo, atque possimus est corporis iure ipsum quas reiciendis
+              nulla, aut earum voluptatem aspernatur.
+            </p>
+            <div class="about-me__links">
+              <a href="" class="about-me__link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fa-solid fa-file"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="about-me__img--container">
+            <img
+              src="/assets/undraw_code-sample_kpju.svg"
+              alt=""
+              class="about-me__img"
+            />
+          </figure>
+        </div>
+      </div>
     </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            This is my <b class="highlighter">technology stack</b>
+          </h1>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/HTML-Logo.webp"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/CSS-Logo-2.png"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/JavaScript-Logo.png"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/React-Logo.webp"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">React</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/HTML-Logo.webp"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/CSS-Logo-2.png"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/JavaScript-Logo.png"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--container">
+                <img
+                  src="/assets/React-Logo.webp"
+                  class="language__img"
+                  alt=""
+                />
+              </figure>
+              <span class="language__name">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <b class="highlighter">projects</b>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__container">
+                <img
+                  src="/assets/bird-thumbnail.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__desc">
+                  <h3 class="project__desc--title">Hummingbird Project</h3>
+                  <h4 class="project__desc--sub-title">
+                    HTML, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__desc--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique in quidem molestias consectetur dolor, repudiandae
+                    odio necessitatibus maxime quos voluptas.
+                  </p>
+                  <div class="project__desc--links">
+                    <a
+                      href="www.github/com/bamiller60"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="www.yourwebsite.com"
+                      target="_blank"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__container">
+                <img
+                  src="/assets/bird-thumbnail.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__desc">
+                  <h3 class="project__desc--title">Hummingbird Project</h3>
+                  <h4 class="project__desc--sub-title">
+                    HTML, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__desc--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique in quidem molestias consectetur dolor, repudiandae
+                    odio necessitatibus maxime quos voluptas.
+                  </p>
+                  <div class="project__desc--links">
+                    <a
+                      href="www.github/com/bamiller60"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="www.yourwebsite.com"
+                      target="_blank"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__container">
+                <img
+                  src="/assets/bird-thumbnail.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__desc">
+                  <h3 class="project__desc--title">Hummingbird Project</h3>
+                  <h4 class="project__desc--sub-title">
+                    HTML, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__desc--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique in quidem molestias consectetur dolor, repudiandae
+                    odio necessitatibus maxime quos voluptas.
+                  </p>
+                  <div class="project__desc--links">
+                    <a
+                      href="https.www.github/com/bamiller60"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="www.yourwebsite.com"
+                      target="_blank"
+                      class="project__desc--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__img--container">
+            <img
+              src="/assets/my-personal-logo.png"
+              class="footer__img"
+              alt="Personal Logo"
+            />
+          </figure>
+          <span class="footer__logo--label">
+            Top
+            <i class="fa-solid fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="https.www.github.com/bamiller60"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            href="https.www.linkedin.com/bamiller60"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:bamiller60@gmail.com"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Email</a
+          >
+          <a
+            href="/assets/resume.pdf"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer__copyright">&copy;2026 Brad Miller</div>
+      </div>
+    </footer>
   </body>
 </html>
