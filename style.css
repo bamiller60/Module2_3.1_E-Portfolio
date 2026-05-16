@@ -41,7 +41,7 @@ a:hover {
 }
 
 a:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 li {
@@ -53,8 +53,16 @@ li:hover {
   transform: scale(1.2);
 }
 
+li:active {
+  transform: scale(0.9);
+}
+
 i:hover {
   transform: scale(1.5);
+}
+
+i:active {
+  transform: scale(0.9);
 }
 
 section:nth-child(even) {
@@ -510,7 +518,7 @@ footer {
   .project__desc--sub-title,
   .project__desc--para {
     text-align: center;
-  }   
+  }
   .footer__row {
     flex-direction: column;
   }
@@ -533,13 +541,13 @@ footer {
     display: block;
   }
   .project__desc--title {
-font-size: 24px;
+    font-size: 24px;
   }
   .project__desc--sub-title {
-font-size: 14px;
+    font-size: 14px;
   }
   .project__desc--para {
-font-size: 12px;
+    font-size: 12px;
   }
   .footer__social--list {
     font-size: 12px;
